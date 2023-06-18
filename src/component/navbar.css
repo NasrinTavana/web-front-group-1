@@ -25,6 +25,8 @@ ul{
     display: block;
     padding-bottom: 10px;
     align-content: center;
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
     color: white;
     margin-left:20px;
@@ -93,8 +95,9 @@ ul{
 .icon1{
     font-size: 13px;
     position: absolute;
-    left:230px;
-    margin-top: 0%;
+    right: 10px;
+    /* left:230px; */
+    /* margin-top: 0%; */
 }
 .animate-icon {
     transition: 0.4s;
@@ -143,4 +146,9 @@ ul{
 #logo1{
     margin: 0;
     padding: 0;
+}
+.login-btn{
+    color: white;
+    background-color: #0f1a34;
+    border: none;
 }

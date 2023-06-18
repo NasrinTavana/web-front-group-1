@@ -197,20 +197,24 @@ function handledropdown13(){
         <>
             <div id="navbar12" className="navbar">
                 <div onClick={navbar1}></div>
-                <button onClick={()=>navigate("Login" )}>Login</button>
                 <ul id="allofit">
                     <div id="logo1">
                     <li className="img1">
-                    <Link className="link1">
-                    <img id="white1" src="./image/logo_white.png"/>
-                    </Link>
+                        <Link className="link1">
+                        <img id="white1" src="./image/logo_white.png"/>
+                        </Link>
                     </li>
                     </div>
                     <li ref={click} id="flash" onClick={handledropdown} className="ils">
                         <Link path="/" id="dash1" className="link1">
-                            <img className="i12" src="./image/1.svg" alt="Image 5" />
-                            <span className="phase">Dashboard</span>
-                            <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                            <div>
+                                <img className="i12" src="./image/1.svg" alt="Image 5" />
+                                <span className="phase">Dashboard</span>
+                            </div>
+                            <div>
+                                <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                            </div>
+                        </Link>
                             {dropdownOpen && (
                                 <div id="myDropdown">
                                     <ul className="uls">
@@ -226,38 +230,49 @@ function handledropdown13(){
                                     </ul>
                                 </div>
                             )}
+                    </li>
+                    <li className="ils">
+                        <Link className="link1">
+                            <div>
+                                <img className="i12" src="./image/2.svg" alt="Image 6" />
+                                <span className="phase">Wallet</span>
+                            </div>
                         </Link>
                     </li>
                     <li className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/2.svg" alt="Image 6" />
-                            <span className="phase">Wallet</span>
+                            <div>
+                                <img className="i12" src="./image/3.svg" alt="Image 7" />
+                                <span className="phase">Buy & Sell</span>
+                            </div>
                         </Link>
                     </li>
                     <li className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/3.svg" alt="Image 7" />
-                            <span className="phase">Buy & Sell</span>
+                            <div>
+                                <img className="i12" src="./image/4.svg" alt="Image 8" />
+                                <span className="phase">Trader Profile</span>
+                            </div>
                         </Link>
                     </li>
                     <li className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/4.svg" alt="Image 8" />
-                            <span className="phase">Trader Profile</span>
+                            <div>
+                                <img className="i12" src="./image/5.svg" alt="Image 9" />
+                                <span className="phase">Crypto Stats</span>
+                            </div>
+
                         </Link>
-                    </li>
-                    <li className="ils">
-                        <Link className="link1">
-                        <img className="i12" src="./image/5.svg" alt="Image 9" />
-                        <span className="phase">Crypto Stats</span>
-                    </Link>
                     </li>
                     <div>
                         <li ref={click1} onClick={handledropdown1} className="ils">
-                            <Link className="link1">   
-                                <img className="i12" src="./image/6.svg" alt="Image 10" />
-                                <span className="phase">Transaction</span>
+                            <Link className="link1">
+                                <div>
+                                    <img className="i12" src="./image/6.svg" alt="Image 10" />
+                                    <span className="phase">Transaction</span>
+                                </div>   
                                 <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                            </Link>
                                 {Stats && (<div>
                                     <ul className="uls">
                                         <li className="all-li">Request</li>
@@ -266,27 +281,33 @@ function handledropdown13(){
                                         <li className="all-li">Payment Details</li>
                                     </ul>
                                 </div>)}
-                            </Link>
+                            
                         </li>
                     </div>
                     <li ref={click2} onClick={handledropdown2} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/7.svg" alt="Image 11" />
-                            <span className="phase">Tickers</span>
+                            <div>
+                                <img className="i12" src="./image/7.svg" alt="Image 11" />
+                                <span className="phase">Tickers</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats1 && (<div>
                                 <ul className="uls">
                                     <il className="all-li">Ticker  Dark</il>
                                     <il className="all-li">Ticker Light</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click3}  onClick={handledropdown3} className="ils">
                         <Link className="link1">
-                        <img className="i12" src="./image/8.svg" alt="Image 11" />
-                        <span className="phase">Apps</span>
-                        <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                            <div>
+                                <img className="i12" src="./image/8.svg" alt="Image 11" />
+                                <span className="phase">Apps</span>
+                            </div>
+                            <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                         {Stats2 && (<div>
                                 <ul className="uls">
                                     <il className="all-li">Editor</il>
@@ -299,18 +320,21 @@ function handledropdown13(){
                                     <il className="all-li">Draggable Card</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click4}  onClick={handledropdown4} className="ils">
                         <Link className="link1 ">
-                            <img className="i12" src="./image/9.svg" alt="Image 11" />
-                            <span className="phase">Pages</span>
+                            <div>
+                                <img className="i12" src="./image/9.svg" alt="Image 11" />
+                                <span className="phase">Pages</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats3&&(<div>
                                 <ul className="uls">
                                     <il className="all-li">Role & Permissions</il>
                                     <il className="all-li">FAQ</il>
-                                    <il className="all-li">Login</il>
+                                    <il className="all-li"><button className="login-btn" onClick={()=>navigate("Login" )}>Login</button></il>
                                     <il className="all-li">Register</il>
                                     <il className="all-li">Error 404</il>
                                     <il className="all-li">Error 500</il>
@@ -323,13 +347,16 @@ function handledropdown13(){
                                     <il className="all-li">Checkout</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click5} onClick={handledropdown5} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/10.svg" alt="Image 11" />
-                            <span className="phase">General</span>
+                            <div>
+                                <img className="i12" src="./image/10.svg" alt="Image 11" />
+                                <span className="phase">General</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats4 && (<div>
                                 <ul className="uls">
                                     <il className="all-li">Minimized Aside</il>
@@ -337,13 +364,16 @@ function handledropdown13(){
                                     <il className="all-li">Fixed Footer</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click6} onClick={handledropdown6} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/11.svg" alt="Image 11" />
-                            <span className="phase">Mail Box</span>
+                            <div>
+                                <img className="i12" src="./image/11.svg" alt="Image 11" />
+                                <span className="phase">Mail Box</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats5 && (<div>
                                 <ui className="uls">
                                     <il className="all-li">Mail box</il>
@@ -353,26 +383,32 @@ function handledropdown13(){
                                     <il className="all-li">Chat</il>
                                 </ui>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click7} onClick={handledropdown7} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/12.svg" alt="Image 11" />
-                            <span className="phase">Icons</span>
+                            <div>
+                                <img className="i12" src="./image/12.svg" alt="Image 11" />
+                                <span className="phase">Icons</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats6 && (<div>
                                 <ul className="uls">
                                     <il className="all-li">Fontawesome Icon</il>
                                     <il className="all-li">Themefy Icon</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click8} onClick={handledropdown8} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/18.svg" alt="Image 11" />
-                            <span className="phase">Ul Element</span>
+                            <div>
+                                <img className="i12" src="./image/18.svg" alt="Image 11" />
+                                <span className="phase">Ul Element</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats7 && (<div>
                                 <ul className="uls">
                                 <il className="all-li">Colors</il>
@@ -391,13 +427,16 @@ function handledropdown13(){
                                 <il className="all-li">Navs</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                       
                     </li>
                     <li ref={click9} onClick={handledropdown9} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/forms.svg" alt="Image 11" />
-                            <span className="phase">forms</span>
+                            <div>
+                                <img className="i12" src="./image/forms.svg" alt="Image 11" />
+                                <span className="phase">forms</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats8 && (<div>
                                 <ul className="uls">
                                 <il className="all-li">Basic Elements</il>
@@ -406,13 +445,16 @@ function handledropdown13(){
                                 <il className="all-li">Layouts</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                       
                     </li>
                     <li ref={click10} onClick={handledropdown10} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/14.svg" alt="Image 11" />
-                            <span className="phase">Widgets</span>
+                            <div>
+                                <img className="i12" src="./image/14.svg" alt="Image 11" />
+                                <span className="phase">Widgets</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats9 && (<div>
                                 <ul className="uls">
                                 <il className="all-li">Accordions</il>
@@ -424,26 +466,32 @@ function handledropdown13(){
                                 <il className="all-li">Profile</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click11} onClick={handledropdown11} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/17.svg" alt="Image 11" />
-                            <span className="phase">Table</span>
+                            <div>
+                                <img className="i12" src="./image/17.svg" alt="Image 11" />
+                                <span className="phase">Table</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats10 && (<div>
                                 <ul className="uls">
                                 <il className="all-li">Data Table</il>
                                 <il className="all-li">Bootstarp</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click12} onClick={handledropdown12} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/16.svg" alt="Image 11" />
-                            <span className="phase">Charts</span>
+                            <div>
+                                <img className="i12" src="./image/16.svg" alt="Image 11" />
+                                <span className="phase">Charts</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats11 && (<div>
                                 <ul className="uls">
                                 <il className="all-li">ChartJS</il>
@@ -453,20 +501,22 @@ function handledropdown13(){
                                 <il className="all-li">Nvd3Charts</il>
                                 </ul>
                             </div>)}
-                        </Link>
+                        
                     </li>
                     <li ref={click13} onClick={handledropdown13} className="ils">
                         <Link className="link1">
-                            <img className="i12" src="./image/map.svg" alt="Image 11" />
-                            <span className="phase">Maps</span>
+                            <div>
+                                <img className="i12" src="./image/map.svg" alt="Image 11" />
+                                <span className="phase">Maps</span>
+                            </div>
                             <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                        </Link>
                             {Stats12 && (<div>
                                 <ul className="uls">
                                 <il className="all-li">Maps JS</il>
                                 <il className="all-li">Vector Maps</il>
                                 </ul>
                             </div>)}
-                        </Link>
                     </li>
                 </ul>
             </div>

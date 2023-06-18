@@ -9,7 +9,7 @@ export default function Dashbord(){
     return(
         <div className='wholepage'>
             <div>
-            <Mainpage/>
+                <Mainpage/>
             </div>
             <div className="dashbord" >
                 <Mainpage1/>
