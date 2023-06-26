@@ -1,0 +1,27 @@
+.chart6-bg{
+    background-color: white;
+}
+.chart6-link{
+    color: #000;
+}
+.chart6-p{
+    color: #adb4c8;
+}
+.chart6-list1{
+    border-bottom: 1px solid #d6d5fa
+}
+.chart6-btn{
+    background-color: #373063;
+    color: white;
+}
+.chart6-label{
+    background-color: white;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20%;
+    border-bottom: #373063;
+}

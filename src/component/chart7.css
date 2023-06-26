@@ -1,0 +1,27 @@
+.chart7-bar{
+    background-color: #f8f9fa;
+   
+}
+.chart7-list{
+    font-family: merriweather sans,sans-serif;
+    color: rgb(102, 101, 101);
+}
+.chart7-btn1{
+    background-color: #e5f2ff;
+    color: #1598ff!important;
+}
+.chart7-btn0{
+    color: rgb(102, 101, 101);
+}
+.chart7-btn0:hover{
+    background-color: #1598ff;
+    color: white;
+    transition: 0.4s;
+}
+.chart7-btn2{
+    color: #2bd27f!important;
+    background-color: #e7fbf0;
+}
+.chart7-all{
+    height: 340px;
+}

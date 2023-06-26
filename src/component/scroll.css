@@ -1,0 +1,6 @@
+.scrollbar {
+    background-color: white;
+    height: 790.59px;
+    width: 100%;
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
