@@ -47,7 +47,12 @@ ul{
     margin: 0;
     display: block!important;
 }
-  
+@media (max-width:991px) {
+    .navbar{
+        position: absolute!important;
+        left: -330px;
+    }
+}
 .navbar ul {
     list-style-type: none;
     padding: 0;

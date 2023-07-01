@@ -46,8 +46,8 @@ let click2 = useClickOutside(()=>{
     setstate2(false)
 })
     return(
-        <div className="pt-4 d-flex w-100">
-            <div className="col-xl-4 ">
+        <div className="pt-4 row d-flex w-100">
+            <div className="col-12 col-xl-4 ">
                 <div className=" bg-white ps-2 pe-2">
                     <div className="d-flex w-100 justify-content-between">
                         <p className="h4">Exchange</p>
@@ -128,56 +128,54 @@ let click2 = useClickOutside(()=>{
                         </div>
                     </div>
             </div>
-                <div className="ms-2 pe-2 bg-white col-xl-8 pt-2 ">
-                    <div className="ps-3 h-100" >
-                        <div className="d-flex justify-content-between">
-                            <p>Recent Activities</p>
-                            <Link className="text-secondary text-decoration-none">View all</Link>
-                        </div>
-                        
-                            <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-3 ">
-                                <i class="bi bi-arrow-down   chart5-list2"></i>
-                                <p className=" chart5-list3   h-6">Sold</p>
-                                <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
-                                <p className=" mt-1">Using - Bank......4585</p>
-                                <p className=" mt-1"> -0.000234 BTC</p>
-                                <p className=" mt-1">-0.454 USD</p>
-                            </div>
-                            <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
-                                <i class="bi bi-arrow-up  chart5-list3s"></i>
-                                <p className=" chart5-list2s h-6">buy</p>
-                                <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
-                                <p className=" mt-1">Using - Bank......4585</p>
-                                <p className=" mt-1"> -0.000234 BTC</p>
-                                <p className=" mt-1">-0.454 USD</p>
-                            </div>
-                            <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
-                                <i class="bi bi-arrow-down   chart5-list2"></i>
-                                <p className=" chart5-list3   h-6">Sold</p>
-                                <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
-                                <p className=" mt-1">Using - Bank......4585</p>
-                                <p className=" mt-1"> -0.000234 BTC</p>
-                                <p className=" mt-1">-0.454 USD</p>
-                            </div>
-                            <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
-                                <i class="bi bi-arrow-down   chart5-list2"></i>
-                                <p className=" chart5-list3   h-6">Sold</p>
-                                <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
-                                <p className=" mt-1">Using - Bank......4585</p>
-                                <p className=" mt-1"> -0.000234 BTC</p>
-                                <p className=" mt-1">-0.454 USD</p>
-                            </div>
-                            <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
-                                <i class="bi bi-arrow-down   chart5-list2"></i>
-                                <p className=" chart5-list3   h-6">Sold</p>
-                                <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
-                                <p className=" mt-1">Using - Bank......4585</p>
-                                <p className=" mt-1"> -0.000234 BTC</p>
-                                <p className=" mt-1">-0.454 USD</p>
-                            </div>
-                        </div>
-                 
+            <div className=" pe-2  col-12 col-xl-8 pt-2 ">
+                <div className="ps-3 bg-white h-100" >
+                    <div className="d-flex justify-content-between">
+                        <p>Recent Activities</p>
+                        <Link className="text-secondary text-decoration-none">View all</Link>
+                    </div>
+                    <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-3 ">
+                        <i class="bi bi-arrow-down   chart5-list2"></i>
+                        <p className=" chart5-list3   h-6">Sold</p>
+                        <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
+                        <p className=" mt-1">Using - Bank......4585</p>
+                        <p className=" mt-1"> -0.000234 BTC</p>
+                        <p className=" mt-1">-0.454 USD</p>
+                    </div>
+                    <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
+                        <i class="bi bi-arrow-up  chart5-list3s"></i>
+                        <p className=" chart5-list2s h-6">buy</p>
+                        <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
+                        <p className=" mt-1">Using - Bank......4585</p>
+                        <p className=" mt-1"> -0.000234 BTC</p>
+                        <p className=" mt-1">-0.454 USD</p>
+                    </div>
+                    <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
+                        <i class="bi bi-arrow-down   chart5-list2"></i>
+                        <p className=" chart5-list3   h-6">Sold</p>
+                        <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
+                        <p className=" mt-1">Using - Bank......4585</p>
+                        <p className=" mt-1"> -0.000234 BTC</p>
+                        <p className=" mt-1">-0.454 USD</p>
+                    </div>
+                    <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
+                        <i class="bi bi-arrow-down   chart5-list2"></i>
+                        <p className=" chart5-list3   h-6">Sold</p>
+                        <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
+                        <p className=" mt-1">Using - Bank......4585</p>
+                        <p className=" mt-1"> -0.000234 BTC</p>
+                        <p className=" mt-1">-0.454 USD</p>
+                    </div>
+                    <div className=" d-flex flex-row justify-content-between align-items-center chart5-bl1 mt-4">
+                        <i class="bi bi-arrow-down   chart5-list2"></i>
+                        <p className=" chart5-list3   h-6">Sold</p>
+                        <img className="" src="./image/bitcoin.svg"/><p className="mt-1 ms-2">Bitcoin</p>
+                        <p className=" mt-1">Using - Bank......4585</p>
+                        <p className=" mt-1"> -0.000234 BTC</p>
+                        <p className=" mt-1">-0.454 USD</p>
+                    </div>
                 </div>
+            </div>
         </div>
     )
 }

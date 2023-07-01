@@ -69,37 +69,32 @@ export default function Chart4(){
     setstate(!Stats)
 }
     return(
+      
         <div>
             <div className="row">
-                <div className="big-d col-xl-8" >
-                    <div>
-                        <div id="all-cahrt">
-                            <div className="title1">
-                                <div className="all-note">
-                                    <p className="note1">254856 USD</p>
-                                    <p className="note2">125648 USD (20%)</p>
-                                </div>
-                                    <div >
-                                        <button className="bibtn">All</button>
-                                        <button className="bibtn">1M</button>
-                                        <button className="bibtn">6M</button>
-                                        <button className="bibtn">1Y</button>
-                                        <button className="bibtn">YTD</button>
-                                    </div>
-                            </div>
-                                <div className="char-4">
-                                    <LineChart  width={770.45} height={300} data={data24} >
-                                    <Line  type="monotone" dataKey="uv" stroke="#0d6efd"/>
-                                    <Tooltip content={<CustomTooltip/>}/>
-                                    </LineChart >
-                                </div>
-                        </div>
-                        
+              <div className="big-d mb-4 col-12 col-xl-8" >
+                <div className="title1">
+                  <div className="all-note">
+                    <p className="note1">254856 USD</p>
+                    <p className="note2">125648 USD (20%)</p>
+                  </div>
+                  <div>
+                    <button className="bibtn">All</button>
+                    <button className="bibtn">1M</button>
+                    <button className="bibtn">6M</button>
+                    <button className="bibtn">1Y</button>
+                    <button className="bibtn">YTD</button>
+                  </div>
                 </div>
-                
-            </div>
-                <div className=" col-xl-4">
-                    <div className="color-pro">
+                <div className="char-4">
+                    <LineChart width={100.45} height={300} data={data24} >
+                    <Line  type="monotone" dataKey="uv" stroke="#0d6efd"/>
+                    <Tooltip content={<CustomTooltip/>}/>
+                    </LineChart >
+                </div>
+              </div>
+                <div className="color-pro mb-4 col-12 col-xl-4">
+                    <div>
                       <div className="p-4">
                         <div className="d-flex justify-content-between ps-2 pb-3 ">
                             <h3 className="fs-4 ">Your Portfolio</h3>

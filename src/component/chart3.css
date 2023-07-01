@@ -4,9 +4,7 @@
 }
 .line1{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .btn2{
@@ -15,6 +13,10 @@
     margin: 5px;
     border: none;
     color:#6f7a92
+}
+.btn2-1{
+    display: flex;
+    flex-direction: column-reverse;
 }
 .p1{
     font-family: merriweather sans,sans-serif;

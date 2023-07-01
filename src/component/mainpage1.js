@@ -69,8 +69,8 @@ function Mainpage1(){
       };
     return(
       <div >
-        <div className="main" >
-          <div className="chart1-1">
+        <div className="main " >
+          <div className="chart1-1 ">
               <p className="p1">
                   Dashborad
               </p>
@@ -78,7 +78,7 @@ function Mainpage1(){
                   Dashborad/Crypto currenct
               </p>               
           </div>
-          <div className="chart1-2">
+          <div className="chart1-2 ">
             <div>
                 <div className="set1">
                     <p className="p3">

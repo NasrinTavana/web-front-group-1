@@ -68,4 +68,6 @@
 }
 .chart5-bl1{
     background-color: #f8f9fa;
+    width: 100%;
+    overflow-x: scroll;
 }

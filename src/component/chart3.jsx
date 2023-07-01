@@ -29,16 +29,12 @@ export default function Chart3(){
         setstate(false)
     });
     return(
-        <div className="main1">
-            <div className="line1">
-                <div >
-                    <div>
-                            <p className="p1">Overview</p>
-                        </div>
-                        <div>
-                            <p className="p2">Statistics, Predictive Analytics Data Visualization, Big Data Analytics, etc.</p>
-                        </div>
-                    </div>
+        <div className="main1 ">
+            <div className="line1 ">
+                <div>
+                    <p className="p1">Overview</p>
+                    <p className="p2">Statistics, Predictive Analytics Data Visualization, Big Data Analytics, etc.</p>
+                </div>
                 <div >
                     <button ref={click} onClick={handlestate} id="btn2" className="btn2"><span>14 MARCH 2020</span><span><i class="bi bi-caret-down-fill"></i></span>
                     {state && (<div><ul className="ul1">
@@ -48,7 +44,7 @@ export default function Chart3(){
                         </ul>
                         </div>)}
                     </button>
-                    <button  className="btn2"><span>Export</span></button>
+                    <button  className="btn2 btn2-1"><span>Export</span></button>
                 </div>
             </div>
         </div>

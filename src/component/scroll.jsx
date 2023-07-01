@@ -16,26 +16,26 @@ export default function Scroll(){
     return(
         
         <div className="col-xl-3 ">
-           <div className="scrollbar ms-2 mt-3 col-xl-3">
-           <div>
-                <p className="ps-2 pt-3">Market News</p>
+            <div className="scrollbar ms-2 mt-3 col-xl-3">
+                <div>
+                    <p className="ps-2 pt-3">Market News</p>
+                </div>
+                <div className="p-2">
+                    <img className="img-fluid  " src="./image/newspaper.svg" />
+                    <p >Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
+                </div>
+                <div className="p-2">
+                    <img className="img-fluid" src="./image/card.svg" />
+                    <p>Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
+                </div>
+                <div className="p-2">
+                    <img className="img-fluid " src="./image/newspaper.svg" />
+                    <p>Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
+                </div>
+                <div className="p-2">
+                    <img className="img-fluid " src="./image/card.svg" />
+                    <p>Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
+                </div>
             </div>
-            <div className="p-2">
-                <img className="img-fluid  " src="./image/newspaper.svg" />
-                <p >Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
-            </div>
-            <div className="p-2">
-                <img className="img-fluid" src="./image/card.svg" />
-                <p>Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
-            </div>
-            <div className="p-2">
-                <img className="img-fluid " src="./image/newspaper.svg" />
-                <p>Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
-            </div>
-            <div className="p-2">
-                <img className="img-fluid " src="./image/card.svg" />
-                <p>Aorem psum dolor sit amet, consect adipisci Quisque scelerisq.</p>
-            </div>
-        </div>
         </div>
     )}

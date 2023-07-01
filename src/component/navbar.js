@@ -195,7 +195,7 @@ function handledropdown13(){
 
     return(
         <>
-            <div id="navbar12" className="navbar">
+            <div id="navbar12"  className="navbar">
                 <div onClick={navbar1}></div>
                 <ul id="allofit">
                     <div id="logo1">
@@ -219,7 +219,7 @@ function handledropdown13(){
                                 <div id="myDropdown">
                                     <ul className="uls">
                                         <li className="allli">
-                                        Default
+                                        <button className="login-btn" onClick={()=>navigate("dashbord")}>Default</button>
                                         </li>
                                         <li className="allli">
                                         Light Sidebar
@@ -341,8 +341,8 @@ function handledropdown13(){
                                     <il className="all-li">Forget Password</il>
                                     <il className="all-li">Gallery</il>
                                     <il className="all-li">Module Setting</il>
-                                    <il className="all-li">Products</il>
-                                    <il className="all-li">Product Details</il>
+                                    <il className="all-li"><button className="login-btn" onClick={()=>navigate("product")}>Product</button></il>
+                                    <il className="all-li"><button className="login-btn" onClick={()=>navigate("product-detail")}>Product Details</button></il>
                                     <il className="all-li">Cart</il>
                                     <il className="all-li">Checkout</il>
                                 </ul>

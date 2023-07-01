@@ -14,7 +14,7 @@ import Chart8 from "../component/chart8";
 
 export default function Dashbord(){
     return(
-        <div className='wholepage'>
+        <div className='wholepage ' >
             <div>
             <Mainpage/>
             </div>
@@ -24,10 +24,13 @@ export default function Dashbord(){
                 <Chart3 />
                 <Chart4 />
                 <Chart5 />
-                <Chart6 />
-                <div className="d-flex"> <div className="m-0"><Chart7 /><Chart8 /></div> <Scroll /> </div>
-                
-             
+                {/* <Chart6 /> */}
+                <div className="d-lg-flex"> 
+                    <div className="m-0">
+                        <Chart7 /><Chart8 />
+                    </div> 
+                    <Scroll /> 
+                </div> 
             </div>
         </div>
     )

@@ -40,7 +40,7 @@ export default function Chart2(){
     return(
         <div>
             <div className="all-list">
-                <div>
+                <div className="d-flex flex-column flex-lg-row">
                     <Link className="list1">Analytics</Link>
                     <Link className="list1">Cryptocurrency</Link>
                     <Link className="list1">Campaign</Link>
@@ -59,8 +59,8 @@ export default function Chart2(){
                     <button className="chart2-button">Setting</button>
                 </div>
             </div>
-            <div className="chart2-1">
-                <div className="sqr1">
+            <div className="chart2-1 row">
+                <div className="sqr1 col-12 col-lg-3">
                     <h4>
                         Total income
                     </h4>
@@ -73,7 +73,7 @@ export default function Chart2(){
                         <p>This month</p>
                     </div>
                 </div>
-                <div className="sqr1">
+                <div className="sqr1 col-12 col-lg-3">
                     <h4>
                         sessions
                     </h4>
@@ -86,7 +86,7 @@ export default function Chart2(){
                         <p>This month</p>
                     </div>
                 </div>
-                <div className="sqr1">
+                <div className="sqr1 col-12 col-lg-3">
                     <h4>
                         Ethereum Wallet
                     </h4>
@@ -99,7 +99,7 @@ export default function Chart2(){
                         <p>This month</p>
                     </div>
                 </div>
-                <div className="sqr1">
+                <div className="sqr1 col-12 col-lg-3">
                     <h4>
                         Number of Clients
                     </h4>

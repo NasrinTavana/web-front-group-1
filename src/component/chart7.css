@@ -1,5 +1,7 @@
 .chart7-bar{
     background-color: #f8f9fa;
+    width: 100%;
+    overflow-x: scroll;
    
 }
 .chart7-list{
@@ -21,7 +23,4 @@
 .chart7-btn2{
     color: #2bd27f!important;
     background-color: #e7fbf0;
-}
-.chart7-all{
-    height: 340px;
 }
