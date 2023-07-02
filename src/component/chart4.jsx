@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 export default function Chart4(){
-
+      
       const data24 = [{
         name: 'Page A',
         uv: 4000,
@@ -54,6 +54,13 @@ export default function Chart4(){
         pv: 4300,
         amt: 2100,
       },];
+      let i = 0
+      for (i=0 ; i<200;i++){
+        let L = (Math.floor(Math.random() * 4000))
+        data24.push({
+          uv : L
+        })
+      }
       const CustomTooltip = ({ active, payload }) => {
         if (active && payload && payload.length) {
           return (
@@ -71,6 +78,7 @@ export default function Chart4(){
     return(
       
         <div>
+          <div id="example" ></div>
             <div className="row">
               <div className="big-d mb-4 col-12 col-xl-8" >
                 <div className="title1">
@@ -87,7 +95,7 @@ export default function Chart4(){
                   </div>
                 </div>
                 <div className="char-4">
-                    <LineChart width={100.45} height={300} data={data24} >
+                    <LineChart width={70.45} height={300} data={data24} >
                     <Line  type="monotone" dataKey="uv" stroke="#0d6efd"/>
                     <Tooltip content={<CustomTooltip/>}/>
                     </LineChart >

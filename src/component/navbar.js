@@ -4,6 +4,7 @@ import "./navbar.css"
 import { Outlet , Link } from "react-router-dom";
 import navbar1 from "./function";
 import { useNavigate } from "react-router-dom";
+import useClickOutside from "./function2";
 // import Mainpage from "./mainpage";
 
 // var k = 1
@@ -35,7 +36,7 @@ import { useNavigate } from "react-router-dom";
 //         const h = document.getElementsByClassName("link1")
 //         for (i=0 ; i<h.length;i++){
 //             h[i].style.justifyContent= "normal"
-            
+ 
 //         }
 //     }
 //     if(k%2!=0){
@@ -59,11 +60,8 @@ import { useNavigate } from "react-router-dom";
 // }
 
 function nba(){
-    const element = document.getElementById("flash")
-    element.addEventListener('click', function() {
-        var icon = this.querySelector(".icon3 i.bi");
-        icon.classList.toggle('rotate');
-    })
+    var icon = document.querySelector(".icon3 i.bi");
+    icon.classList.toggle('rotate');
 } 
 // function dropdown(){
 //     const[Stats , setstate]=useState(false);
@@ -139,6 +137,10 @@ let click12 = useClickOutside(()=>{
 let click13 = useClickOutside(()=>{
     setstate12(false)
 })
+// const p = document.getElementById("#navbar")
+// let click14 = useClickOutside(()=>{
+//     p.style.left = "-330px"
+// })
 const [Stats , setstate]=React.useState(false);
 function handledropdown1(){
     setstate(!Stats)
@@ -192,11 +194,10 @@ function handledropdown13(){
     setstate12(!Stats12)
 }
 
-
     return(
         <>
-            <div id="navbar12"  className="navbar">
-                <div onClick={navbar1}></div>
+            <div id="navbar12" className="navbar">
+                <div  onClick={navbar1}></div>
                 <ul id="allofit">
                     <div id="logo1">
                     <li className="img1">
@@ -212,7 +213,7 @@ function handledropdown13(){
                                 <span className="phase">Dashboard</span>
                             </div>
                             <div>
-                                <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                                <span className="icon3"><i id="icon1" className="bi animate-icon bi-chevron-right icon1"></i></span>
                             </div>
                         </Link>
                             {dropdownOpen && (

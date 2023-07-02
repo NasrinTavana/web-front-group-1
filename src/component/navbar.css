@@ -38,7 +38,6 @@ ul{
 .p1{
     margin: 0;
 }
-/* Navbar.css */
 .navbar {
     color: #fff;
     width: 320px;
@@ -51,6 +50,8 @@ ul{
     .navbar{
         position: absolute!important;
         left: -330px;
+        transition: 0.4s;
+        z-index: 11;
     }
 }
 .navbar ul {

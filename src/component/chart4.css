@@ -65,3 +65,7 @@
 .padding-1{
     border-bottom: 1px solid #d6d5fa
 }
+#example{
+    color: #0d6efd;
+    font-size: 30px;
+}

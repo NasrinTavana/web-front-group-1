@@ -5,8 +5,30 @@ import './mainpage.css'
 import Navbar from "./navbar.js";
 import "./navbar.css"
 import navbar1 from "./function";
+import {useEffect, useRef, useState} from "react";
+
 
 function Mainpage(){
+    // let useClickOutside=(handler)=>{
+    //     let click  = useRef();
+    
+    //     useEffect(()=>{
+    //         let handler1= (event) =>{
+    //             if(!click.current.contains(event.target)){
+    //                 handler();
+    //                 }
+    //             };
+    //             document.addEventListener("mousedown",handler1 );
+    //             return () => {
+    //             document.removeEventListener("mousedown",handler1)
+    //             }
+    //         });
+    //         return click
+    // };
+    // const p = document.getElementById("#navbar")
+    // let click14 = useClickOutside(()=>{
+    //     p.style.left = "-330px"
+    // })
     return(
             <div className="first">
                 <div>
