@@ -1,9 +1,14 @@
 .wholepage{ 
-    width: 100%;
+    /* width: 100%; */
 }
 .dashbord{
     padding: 30px;
     padding-left: 25px;
     
     background-color: #f9f9f9;
+}
+@media (max-width:500px) {
+    .dashbord{
+        padding: 8px;
+    }
 }

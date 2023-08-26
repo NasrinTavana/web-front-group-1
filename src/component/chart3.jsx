@@ -29,8 +29,8 @@ export default function Chart3(){
         setstate(false)
     });
     return(
-        <div className="main1 ">
-            <div className="line1 ">
+        <div className="main1">
+            <div className="line1">
                 <div>
                     <p className="p1">Overview</p>
                     <p className="p2">Statistics, Predictive Analytics Data Visualization, Big Data Analytics, etc.</p>

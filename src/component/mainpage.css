@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-content: center;
     height: 100px;
+    background-color: #ffffff;
 }
 #img1{
     width: 23px;
@@ -35,4 +36,10 @@
     margin-bottom: 5px;
     margin-left: 10px;
     font-family: merriweather sans,sans-serif;
+}
+.ggg{
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    /* background-color: black; */
 }

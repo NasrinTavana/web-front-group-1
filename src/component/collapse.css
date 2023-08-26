@@ -1,0 +1,26 @@
+.img{
+    width: 47.5px;
+    height: 30px;
+}
+
+.lable{
+    border: none;
+    width: 320px;
+    margin-left:1rem ;
+    border-radius:0;
+    border: 1px solid #eff2f7;
+    border-radius: 3px;
+}
+.ant-collapse-header{
+   background-color: white; 
+   border: none;
+   
+}
+.ant-collapse{
+    border: none ;
+}
+.ant-collapse>.ant-collapse-item:last-child{
+    border: none!important;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 0px;
+}

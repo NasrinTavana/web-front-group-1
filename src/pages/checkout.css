@@ -1,0 +1,66 @@
+.ch-text{
+    color: #a4abc5;
+}
+.ch-main{
+    /* width: 1271px; */
+    background-color: #f9f9f9;
+    height: 1091px;
+}
+.ch-img{
+    width: 52px;
+    height: 52px;
+}
+.ch-b1{
+    border-bottom: 1px solid #eff2f7;
+}
+.ch-payment{
+    width: 150px;
+}
+.ch-b2{
+    border: 1px solid #eff2f7;
+}
+.ch-b3{
+    border-bottom: 2px solid #212529;
+}
+.ch-w{
+    width: 270px;
+}
+.ch-border{
+    
+    background-color: white;
+    width: 179px;
+    align-items: center;
+    
+}
+.ch-p2{
+    padding: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.ch-ic{
+    font-size: 13px;
+}
+.ch-img2{
+    width: 47.5px;
+    height: 30px;
+}
+
+.ch-ul1-1{
+    position: absolute;
+    right: 48px;
+    bottom: -176px;
+}
+.ch-ul1{
+    position: relative;
+}
+#ch-ul2{
+    position: relative;
+}
+.ch-select{
+    width: 177px;
+}
+.ch-btn1{
+    background-color: #373063;
+    border: 1px solid #373063;
+    color: #fff;
+}

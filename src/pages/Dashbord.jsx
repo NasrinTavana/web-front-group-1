@@ -10,13 +10,23 @@ import Chart6 from "../component/chart6";
 import Chart7 from "../component/chart7";
 import Scroll from "../component/scroll";
 import Chart8 from "../component/chart8";
+import Navbar from "../component/navbar";
+import { ValueProvider } from "../component/function";
+// Navbar()
 
 
+// function closenav(){
+//     var b = document.getElementById("navbar12")
+//     b.style.left = "0"
+// }
 export default function Dashbord(){
+   
     return(
         <div className='wholepage ' >
             <div>
-            <Mainpage/>
+                <ValueProvider>
+                    <Mainpage/>
+                </ValueProvider>
             </div>
             <div className="dashbord" >
                 <Mainpage1/>
@@ -24,7 +34,7 @@ export default function Dashbord(){
                 <Chart3 />
                 <Chart4 />
                 <Chart5 />
-                {/* <Chart6 /> */}
+                <Chart6 />
                 <div className="d-lg-flex"> 
                     <div className="m-0">
                         <Chart7 /><Chart8 />

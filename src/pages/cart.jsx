@@ -6,7 +6,8 @@ import { BarChart, Bar,LineChart, Line, CartesianGrid, Cell, XAxis, YAxis, carte
 import { useSpring, animated, config } from "react-spring";
 import { click } from "@testing-library/user-event/dist/click";
 import 'bootstrap/dist/css/bootstrap.css';
-
+import { ValueProvider } from "../component/function";
+import Mainpage from "../component/mainpage";
 
 export default function Cart(){
     let [firstName, setFirstName] = useState('2');
@@ -15,7 +16,9 @@ export default function Cart(){
     let [firstName3, setFirstName3] = useState('1');
     return(
         <div className="cart-main">
-            
+            <ValueProvider>
+                <Mainpage/>
+            </ValueProvider>
             <div className="d-flex justify-content-between align-items-center ms-3  ">
                 <div className="mt-4">
                     <p className="h3">Cart</p>

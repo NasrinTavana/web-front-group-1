@@ -2,11 +2,12 @@ import React,{ PureComponent,useEffect, useRef, useState} from "react";
 import ReactDOM from 'react-dom/client';
 import { Link  } from "react-router-dom";
 import "./chart4.css"
-import { BarChart, Bar,LineChart, Line, CartesianGrid, Cell, XAxis, YAxis, cartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+// import { BarChart, Bar,LineChart, Line, CartesianGrid, Cell, XAxis, YAxis, cartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { useSpring, animated, config } from "react-spring";
 import { click } from "@testing-library/user-event/dist/click";
 import 'bootstrap/dist/css/bootstrap.css';
 
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 
 
@@ -75,9 +76,25 @@ export default function Chart4(){
     function handledropdown1(){
     setstate(!Stats)
 }
+  var screen_size = document.documentElement.scrollWidth
+  const [screen_size_data , set_screen_size_data] =useState(1) 
+
+  useEffect(()=>{
+      if (screen_size>1440 && screen_size){
+        set_screen_size_data(790)
+      }
+      if (screen_size<1440 && screen_size>1000){
+        set_screen_size_data(600)
+      }
+      if(screen_size<1000 && screen_size>740){
+        set_screen_size_data(300)
+      }
+  },[])
+
     return(
       
         <div>
+          
           <div id="example" ></div>
             <div className="row">
               <div className="big-d mb-4 col-12 col-xl-8" >
@@ -94,12 +111,12 @@ export default function Chart4(){
                     <button className="bibtn">YTD</button>
                   </div>
                 </div>
-                <div className="char-4">
-                    <LineChart width={70.45} height={300} data={data24} >
-                    <Line  type="monotone" dataKey="uv" stroke="#0d6efd"/>
-                    <Tooltip content={<CustomTooltip/>}/>
-                    </LineChart >
-                </div>
+                <ResponsiveContainer width="100%" height="80%">
+                  <LineChart  width={700} height={300} data={data24} >
+                  <Line  type="monotone" dataKey="uv" stroke="#0d6efd"/>
+                  <Tooltip content={<CustomTooltip/>}/>
+                  </LineChart >
+                </ResponsiveContainer>
               </div>
                 <div className="color-pro mb-4 col-12 col-xl-4">
                     <div>

@@ -39,6 +39,11 @@
 .card{
     width: fit-content;
 }
+@media (max-width:991px) {
+    .card{
+        width: auto;
+    }
+}
 .ribbon1 {
     position: absolute;
     top: -6.1px;

@@ -1,83 +1,77 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React , {useEffect, useRef, useState} from "react";
 import "./navbar.css"
 import { Outlet , Link } from "react-router-dom";
-import navbar1 from "./function";
 import { useNavigate } from "react-router-dom";
-import useClickOutside from "./function2";
-// import Mainpage from "./mainpage";
-
-// var k = 1
-// var i =0 
-// var srcs = ["./image/mini_logo.png" , "./image/logo_white.png"]
-// function navbar1(){
-//     const m = document.getElementById("navbar12")
-//     if (k%2==0){
-//         m.style.width = "240px" 
-//         document.getElementById("white1").src = srcs[1]
-//         document.getElementsByClassName("phase")[0].innerHTML = "dashboard"
-//         document.getElementsByClassName("phase")[1].innerHTML = "wallet"
-//         document.getElementsByClassName("phase")[2].innerHTML = "Buy & Sell"
-//         document.getElementsByClassName("phase")[3].innerHTML = "Trader Profile"
-//         document.getElementsByClassName("phase")[4].innerHTML = "Crypyo Stats"
-//         document.getElementsByClassName("phase")[5].innerHTML = "Transaction"
-//         document.getElementsByClassName("phase")[6].innerHTML = "Ticker"
-//         document.getElementsByClassName("phase")[7].innerHTML = "Apps"
-//         document.getElementsByClassName("phase")[8].innerHTML = "Pages"
-//         document.getElementsByClassName("phase")[9].innerHTML = "General"
-//         document.getElementsByClassName("phase")[10].innerHTML = "Mail Box"
-//         document.getElementsByClassName("phase")[11].innerHTML = "Icons"
-//         document.getElementsByClassName("phase")[12].innerHTML = "Ul Element"
-//         document.getElementsByClassName("phase")[13].innerHTML = "Forms"
-//         document.getElementsByClassName("phase")[14].innerHTML = "Widgets"
-//         document.getElementsByClassName("phase")[15].innerHTML = "Table"
-//         document.getElementsByClassName("phase")[16].innerHTML = "Charts"
-//         document.getElementsByClassName("phase")[17].innerHTML = "Maps"
-//         const h = document.getElementsByClassName("link1")
-//         for (i=0 ; i<h.length;i++){
-//             h[i].style.justifyContent= "normal"
- 
-//         }
-//     }
-//     if(k%2!=0){
-//         m.style.width = "136px"
-//         document.getElementById("white1").src=srcs[0]
-//         const jh = document.getElementsByClassName("phase")
-
-//         for (i=0 ; i<jh.length;i++){
-//             jh[i].innerHTML = ""
-//         }
-//         // document.getElementById("::arrow").style.transform = "rotate(0deg)"
-//         const h = document.getElementsByClassName("link1")
-//         for (i=0 ; i<h.length;i++){
-//             h[i].style.justifyContent= "center"
-//         }
-//     }
-//     k++
-//     if (k==3){
-//         k=1
-//     }
-// }
+var i =0
 
 function nba(){
-    var icon = document.querySelector(".icon3 i.bi");
+    var icon = document.getElementsByClassName("bi")[0];
+    console.log(icon)
     icon.classList.toggle('rotate');
 } 
-// function dropdown(){
-//     const[Stats , setstate]=useState(false);
-//     const showdropdown=()=>{
-//         setstate(true)
-//     const hidedropedown=()=>{
-//         setstate(false)
-//     }
-//     }
-// }
+function nba1(){
+    var icon = document.getElementsByClassName("bi")[1];
+    icon.classList.toggle('rotate');
+}
+function nba2(){
+    var icon = document.getElementsByClassName("bi")[2];
+    icon.classList.toggle('rotate');
+}
+function nba3(){
+    var icon = document.getElementsByClassName("bi")[3];
+    icon.classList.toggle('rotate');
+}
+function nba4(){
+    var icon = document.getElementsByClassName("bi")[4];
+    icon.classList.toggle('rotate');
+}
+function nba5(){
+    var icon = document.getElementsByClassName("bi")[5];
+    icon.classList.toggle('rotate');
+}
+function nba6(){
+    var icon = document.getElementsByClassName("bi")[6];
+    icon.classList.toggle('rotate');
+}
+function nba7(){
+    var icon = document.getElementsByClassName("bi")[7];
+    icon.classList.toggle('rotate');
+}
+function nba8(){
+    var icon = document.getElementsByClassName("bi")[8];
+    icon.classList.toggle('rotate');
+}
+function nba9(){
+    var icon = document.getElementsByClassName("bi")[9];
+    icon.classList.toggle('rotate');
+}
+function nba10(){
+    var icon = document.getElementsByClassName("bi")[10];
+    icon.classList.toggle('rotate');
+}
+function nba11(){
+    var icon = document.getElementsByClassName("bi")[11];
+    icon.classList.toggle('rotate');
+}
+function nba12(){
+    var icon = document.getElementsByClassName("bi")[12];
+    icon.classList.toggle('rotate');
+}
+function nba13(){
+    var icon = document.getElementsByClassName("bi")[13];
+    icon.classList.toggle('rotate');
+}
 function Navbar(){
 const navigate = useNavigate()
 const [dropdownOpen, setDropdownOpen] = React.useState(false);
+const [Stats , setstate]=React.useState(false);
 function handledropdown(){
     setDropdownOpen(!dropdownOpen)
     return nba()
+}
+function handledropdown1(){
+    setstate(!Stats)
+    return nba1()
 }
 let useClickOutside=(handler)=>{
     let click  = useRef();
@@ -137,78 +131,114 @@ let click12 = useClickOutside(()=>{
 let click13 = useClickOutside(()=>{
     setstate12(false)
 })
-// const p = document.getElementById("#navbar")
-// let click14 = useClickOutside(()=>{
-//     p.style.left = "-330px"
-// })
-const [Stats , setstate]=React.useState(false);
-function handledropdown1(){
-    setstate(!Stats)
-}
+let click14 = useClickOutside(()=>{
+    if(document.documentElement.scrollWidth<991){
+        const p = document.getElementById("navbar12")
+        p.style.left = "-330px"
+        }
+})
+let value = 0  
+useEffect(()=>{
+    const interval = setInterval(() => {
+        if (value==0){
+            if(document.documentElement.scrollWidth<991){
+                    const p = document.getElementById("navbar12")
+                    p.style.left = "-330px"
+            }
+            value+=1
+            if (value==3){
+                value=1
+            }
+        }
+        
+        if(document.documentElement.scrollWidth>991){
+            const p = document.getElementById("navbar12")
+            p.style.left = "0px"
+            value = 0 
+        }
+    }, 200);
+    return ()=> clearInterval(interval)
+
+} ,[])
+
+
+
+
 const [Stats1 , setstate1]=React.useState(false);
 function handledropdown2(){
     setstate1(!Stats1)
+    return nba2()
 }
 const [Stats2 , setstate2]=React.useState(false);
 function handledropdown3(){
     setstate2(!Stats2)
+    return nba3()
 }
 const [Stats3 , setstate3]=React.useState(false);
 function handledropdown4(){
     setstate3(!Stats3)
+    return nba4()
 }
 const [Stats4 , setstate4]=React.useState(false);
 function handledropdown5(){
     setstate4(!Stats4)
+    return nba5()
 }
 const [Stats5 , setstate5]=React.useState(false);
 function handledropdown6(){
     setstate5(!Stats5)
+    return nba6()
 }
 const [Stats6 , setstate6]=React.useState(false);
 function handledropdown7(){
     setstate6(!Stats6)
+    return nba7()
 }
 const [Stats7 , setstate7]=React.useState(false);
 function handledropdown8(){
     setstate7(!Stats7)
+    return nba8()
 }
 const [Stats8 , setstate8]=React.useState(false);
 function handledropdown9(){
     setstate8(!Stats8)
+    return nba9()
 }
 const [Stats9 , setstate9]=React.useState(false);
 function handledropdown10(){
     setstate9(!Stats9)
+    return nba10()
 }
 const [Stats10 , setstate10]=React.useState(false);
 function handledropdown11(){
     setstate10(!Stats10)
+    return nba11()
 }
+
 const [Stats11 , setstate11]=React.useState(false);
 function handledropdown12(){
     setstate11(!Stats11)
+    return nba12()
 }
 const [Stats12 , setstate12]=React.useState(false);
 function handledropdown13(){
     setstate12(!Stats12)
+    return nba13()
 }
-
     return(
         <>
-            <div id="navbar12" className="navbar">
-                <div  onClick={navbar1}></div>
-                <ul id="allofit">
+            <div ref={click14} id="navbar12" className="navbar">
+                <ul  id="allofit">
                     <div id="logo1">
                     <li className="img1">
                         <Link className="link1">
-                        <img id="white1" src="./image/logo_white.png"/>
+                            <img id="white1" src="./image/logo_white.png"/>
                         </Link>
                     </li>
                     </div>
                     <li ref={click} id="flash" onClick={handledropdown} className="ils">
                         <Link path="/" id="dash1" className="link1">
-                            <div>
+                            <div className="dashbordbutton">
                                 <img className="i12" src="./image/1.svg" alt="Image 5" />
                                 <span className="phase">Dashboard</span>
                             </div>
@@ -220,7 +250,7 @@ function handledropdown13(){
                                 <div id="myDropdown">
                                     <ul className="uls">
                                         <li className="allli">
-                                        <button className="login-btn" onClick={()=>navigate("dashbord")}>Default</button>
+                                        <button className="login-btn" onClick={()=>navigate("/")}>Default</button>
                                         </li>
                                         <li className="allli">
                                         Light Sidebar
@@ -267,12 +297,14 @@ function handledropdown13(){
                     </li>
                     <div>
                         <li ref={click1} onClick={handledropdown1} className="ils">
-                            <Link className="link1">
+                            <Link className="flex link1">
                                 <div>
                                     <img className="i12" src="./image/6.svg" alt="Image 10" />
                                     <span className="phase">Transaction</span>
                                 </div>   
-                                <span className="icon3"><i className="bi animate-icon bi-chevron-right icon1"></i></span>
+                                <div>
+                                    <span className="icon3"><i  className="bi animate-icon bi-chevron-right icon1"></i></span>
+                                </div>
                             </Link>
                                 {Stats && (<div>
                                     <ul className="uls">
@@ -286,7 +318,7 @@ function handledropdown13(){
                         </li>
                     </div>
                     <li ref={click2} onClick={handledropdown2} className="ils">
-                        <Link className="link1">
+                        <Link className=" link1">
                             <div>
                                 <img className="i12" src="./image/7.svg" alt="Image 11" />
                                 <span className="phase">Tickers</span>
@@ -336,7 +368,7 @@ function handledropdown13(){
                                     <il className="all-li">Role & Permissions</il>
                                     <il className="all-li">FAQ</il>
                                     <il className="all-li"><button className="login-btn" onClick={()=>navigate("Login" )}>Login</button></il>
-                                    <il className="all-li">Register</il>
+                                    <il className="all-li"><button className="login-btn" onClick={()=>{navigate("/Register")}}>Register</button></il>
                                     <il className="all-li">Error 404</il>
                                     <il className="all-li">Error 500</il>
                                     <il className="all-li">Forget Password</il>
@@ -344,8 +376,8 @@ function handledropdown13(){
                                     <il className="all-li">Module Setting</il>
                                     <il className="all-li"><button className="login-btn" onClick={()=>navigate("product")}>Product</button></il>
                                     <il className="all-li"><button className="login-btn" onClick={()=>navigate("product-detail")}>Product Details</button></il>
-                                    <il className="all-li">Cart</il>
-                                    <il className="all-li">Checkout</il>
+                                    <il className="all-li"><button className="login-btn" onClick={()=>navigate("cart")}>Cart</button></il>
+                                    <il className="all-li"><button className="login-btn" onClick={()=>navigate("checkout")}>Checkout</button></il>
                                 </ul>
                             </div>)}
                         
